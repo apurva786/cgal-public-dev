@@ -248,17 +248,17 @@ namespace CGAL {
 
 				const FT tol = m_constraints_tolerance;
 				
-				std::pair<FT, FT> bc = BC::compute_segment_coordinates_2(source, target, p1, Kernel());
-				const bool state1 = bc.first > tol && bc.second > tol;
+				cpp11::array<FT, 2> bc = BC::compute_segment_coordinates_2(source, target, p1, Kernel());
+				const bool state1 = bc[0] > tol && bc[1] > tol;
 
 				bc = BC::compute_segment_coordinates_2(source, target, p2, Kernel());
-				const bool state2 = bc.first > tol && bc.second > tol;
+				const bool state2 = bc[0] > tol && bc[1] > tol;
 
 				bc = BC::compute_segment_coordinates_2(p1, p2, source, Kernel());
-				const bool state3 = bc.first > tol && bc.second > tol;
+				const bool state3 = bc[0] > tol && bc[1] > tol;
 
 				bc = BC::compute_segment_coordinates_2(p1, p2, target, Kernel());
-				const bool state4 = bc.first > tol && bc.second > tol;
+				const bool state4 = bc[0] > tol && bc[1] > tol;
 
 				if ( (state1 && state2) || (state3 && state4) ) return true;
 				return false;
