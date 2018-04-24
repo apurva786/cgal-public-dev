@@ -1466,9 +1466,10 @@ namespace CGAL {
 				Mesh mesh_0, mesh_1, mesh_2; Mesh_facet_colors mesh_facet_colors_0, mesh_facet_colors_1, mesh_facet_colors_2;
 				creating_lod0_and_lod1(input, building_interior_idxs, fitted_ground_box, ground_bbox, cdt, buildings, mesh_0, mesh_1, mesh_facet_colors_0, mesh_facet_colors_1);
 
-				// (lod2) -----------------------------------
+#ifdef CGAL_LOD_BUILD_EXPERIMENTAL_LOD2
+        // (lod2) -----------------------------------
 				creating_lod2(input, building_interior_idxs, cdt, fitted_ground_box, ground_bbox, buildings, mesh_0, mesh_1, mesh_2, mesh_facet_colors_0, mesh_facet_colors_1, mesh_facet_colors_2);
-
+#endif
 
 				// --- End ----------->
 				exec_step = 0;
