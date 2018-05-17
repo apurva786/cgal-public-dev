@@ -1,0 +1,7 @@
+set(CGAL_POLYHEDRON_DEMO_CMAKE_MODULE_PATH "/home/apurva/Desktop/GIT/cgal-public-dev-gsoc2018-bso_demo-apurva/Polyhedron/demo/Polyhedron;/home/apurva/Desktop/GIT/cgal-public-dev-gsoc2018-bso_demo-apurva/demo/Polyhedron")
+set(CGAL_POLYHEDRON_DEMO_DEFINITIONS "")
+set(CGAL_POLYHEDRON_DEMO_HEADERS_DIRS "/home/apurva/Desktop/GIT/cgal-public-dev-gsoc2018-bso_demo-apurva/Polyhedron/demo/Polyhedron;/home/apurva/Desktop/GIT/cgal-public-dev-gsoc2018-bso_demo-apurva/Polyhedron/demo/Polyhedron/include;/home/apurva/Desktop/GIT/cgal-public-dev-gsoc2018-bso_demo-apurva/Polyhedron/demo/Polyhedron/CGAL_demo")
+set(CGAL_POLYHEDRON_DEMO_DIR "/home/apurva/Desktop/GIT/cgal-public-dev-gsoc2018-bso_demo-apurva/demo/Polyhedron")
+set(CGAL_POLYHEDRON_DEMO_PLUGINS_DIR "")
+set(CGAL_POLYHEDRON_DEMO_USE_FILE "/home/apurva/Desktop/GIT/cgal-public-dev-gsoc2018-bso_demo-apurva/Polyhedron/demo/Polyhedron/UseCGAL_polyhedron_demo.cmake")
+set(CGAL_polyhedron_demoFOUND TRUE)
